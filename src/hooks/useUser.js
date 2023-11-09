@@ -1,5 +1,5 @@
 import axios from 'axios';
-import useSWR from 'swr';
+import useSWR from 'swr';  //fetch the data when first time called and cash it
 
 async function userFetcher(url) {
   const res = await axios.get(url);

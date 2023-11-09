@@ -27,9 +27,9 @@ describe("RepositoriesListItem", () => {
           <MemoryRouter>
               <RepositoriesListItem repository={repository}/>
           </MemoryRouter>
-        )
+        );
         return {repository}
-    }
+    };
 
     it("displays link to gitHub repo", async () => {
         const {repository} = renderComponent();
